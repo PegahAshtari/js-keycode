@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+
+#header {
+    background-color: rgb(21, 101, 192);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+#table-btn {
+    padding: 5px 40px;
+    color: #fff;
+    background-color: rgb(21, 101, 192);
+    border: 1px solid #aaaa;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#table-btn:hover {
+    cursor: pointer;
+    border-color: #fff;
+}
+
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+#utilities {
+    text-decoration: none;
+    color: #fff
+}
+
+
+#icon {
+    width: 20px;
+    height: 20px;
+}
+
+#whole-content {
+    width: 100vw;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+#heading {
+    margin-top: 40px;
+}
+
+
+#alert {
+    background-color: #fff;
+    width: 500px;
+    padding: 60px 100px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+
+#keycode-num {
+    font-size: 200px;
+}
+
+#keycode-info {
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 2px #bbb;
+    transition: all 0.2s ease-in-out;
+}
+
+.item:hover {
+    transform: translate(0px, -5px);
+    box-shadow: 1px 1px 15px 5px #bbb;
+}
+
+.top {
+    background-color: rgb(21, 101, 192);
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.explanation {
+    background-color: #ccc;
+    padding: 20px;
+    line-height:22px;
+    overflow: auto;
+    text-align: start;
+    font-size: 14px;
+    color: #1b1b1b;
+}
+
