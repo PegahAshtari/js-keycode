@@ -24,13 +24,13 @@
     </header>
     <div id="whole-content">
         <main id="main">
-            <h2 id="heading">JavaScript Keycode</h2>
+            <h2 id="heading">JavaScript Keycode <span class="event-which">65</span></h2>
             <!-- first box -->
             <div id="alert">
                 Press any key to get the JavaScript event keycode info
             </div>
             <!-- keycode number -->
-            <p id="keycode-num">92</p>
+            <p class="event-which" id="keycode-num">65</p>
 
             <p id="keycode-info">Keycode information</p>
 
@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="item">
                     <div class="top">event.key</div>
-                    <div class="center">Left-side modifier keys
+                    <div class="center">a
                     </div>
                     <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
                         of the key pressed. Try it with both shifts.</div>
@@ -46,7 +46,7 @@
 
                 <div class="item">
                     <div class="top">event.location</div>
-                    <div class="center">Left-side modifier keys
+                    <div class="center">General keys
                     </div>
                     <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
                         of the key pressed. Try it with both shifts.</div>
@@ -54,7 +54,7 @@
 
                 <div class="item">
                     <div class="top">event.code</div>
-                    <div class="center">Left-side modifier keys
+                    <div class="center">KeyA
                     </div>
                     <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
                         of the key pressed. Try it with both shifts.</div>
@@ -62,15 +62,7 @@
 
                 <div class="item">
                     <div class="top">event.which</div>
-                    <div class="center">Left-side modifier keys
-                    </div>
-                    <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
-                        of the key pressed. Try it with both shifts.</div>
-                </div>
-
-                <div class="item">
-                    <div class="top">Description</div>
-                    <div class="center">Left-side modifier keys
+                    <div class="center event-which">65
                     </div>
                     <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
                         of the key pressed. Try it with both shifts.</div>
@@ -78,7 +70,19 @@
 
                 <div class="item">
                     <div class="top">Event Dump</div>
-                    <div class="center">Left-side modifier keys
+                    <div class="center">
+                        <p id="event-dump">{
+                            "key": "c",
+                            "keyCode": 67,
+                            "which": 67,
+                            "code": "KeyC",
+                            "location": 0,
+                            "altKey": false,
+                            "ctrlKey": true,
+                            "metaKey": false,
+                            "shiftKey": false,
+                            "repeat": false
+                            }</p>
                     </div>
                 </div>
             </div>
