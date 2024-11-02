@@ -1,107 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Keycode Event Tool</title>
+    <title>JS KeyCode Tool</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
         <div id="header">
             <button id="table-btn">Table</button>
             <div id="left">
                 <a href="#" target="_blank" id="utilities">Utilities</a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" id="icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                  <p>Keycodes</p> 
+                </svg>
+                <p>Keycodes</p>
             </div>
         </div>
     </header>
     <div id="whole-content">
         <main id="main">
-            <h2 id="heading">JavaScript Keycode</h2>
-    
+            <h2 id="heading">JavaScript Keycode <span class="e-which"></span></h2>
+            <!-- first box -->
             <div id="alert">
                 Press any key to get the JavaScript event keycode info
             </div>
-    
-        
-            <p id="keycode-num">91</p>
-    
-            <p id="keycode-info">Keycode information</p>
-    
-            <div class="container">
+            <!-- keycode number -->
+            <p class="e-which" id="keycode-num"></p>
+
+
+            <div id="container">
+                <p id="keycode-info">Keycode information</p>
+
+                <!-- Cards -->
+                <div class="cards">
+               
                     <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
+                        <div class="top">event.key</div>
+                        <div class="center" id="e-key">
                         </div>
-                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.</div>
+                        <div class="explanation">The value of the key pressed. Accounts for modifiers keys that return CAPS
+                            and alternate chars.</div>
                     </div>
-    
+
                     <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
+                        <div class="top">event.location</div>
+                        <div class="center" id="e-loc">
+                            <!-- General keys -->
                         </div>
-                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.</div>
+                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location
+                            of the key pressed. Try it with both shifts.</div>
                     </div>
-    
+
                     <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
+                        <div class="top">event.code</div>
+                        <div class="center" id="e-code">
                         </div>
-                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.</div>
+                        <div class="explanation">The physical key on the keyboard. Doesn't care if you are holding a
+                            modifier like Shift.</div>
                     </div>
-    
+
                     <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
+                        <div class="top">event.which</div>
+                        <div class="center e-which">
                         </div>
-                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.</div>
+                        <div class="explanation">event.which and event.keyCode are deprecated in modern browsers. Use .key
+                            or .code instead.</div>
                     </div>
-    
+
                     <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
+                        <div class="top">Event Dump</div>
+                        <div class="center">
+                            <p id="e-dump">{
+                                "key": "c",
+                                "keyCode": 67,
+                                "which": 67,
+                                "code": "KeyC",
+                                "location": 0,
+                                "altKey": false,
+                                "ctrlKey": true,
+                                "metaKey": false,
+                                "shiftKey": false,
+                                "repeat": false
+                                }</p>
                         </div>
-                        <div class="explanation">Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.</div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
-                        </div>
-                    </div>
-    
-                    <div class="item">
-                        <div class="top">class="item"</div>
-                        <div class="center">Left-side modifier keys
-                        </div>
-                    </div>
+                        <div class="explanation">Here You Can See All Key Event Object Infos</div>
                 </div>
-    
-    
+            </div>
+            </div>
         </main>
     </div>
-    
 </body>
+
+<script src="./JS/script.js"></script>
+
 </html>
