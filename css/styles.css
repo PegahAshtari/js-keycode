@@ -156,6 +156,10 @@ body {
     color: #1b1b1b;
 }
 
+.text {
+    vertical-align: middle;
+}
+
 #e-dump{
     font-size: 12px;
     white-space: pre-line;
